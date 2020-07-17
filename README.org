@@ -1,0 +1,3 @@
+* Bahan Ajar Web Desain
+
+Materi bisa dilihat di [[https://dbrw.github.io/materi-wd/][sini]].

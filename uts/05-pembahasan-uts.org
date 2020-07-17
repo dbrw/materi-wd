@@ -1,0 +1,53 @@
+#+TITLE: Studi Kasus
+#+AUTHOR: Dhimas Widrayato 
+#+EMAIL: dhimas@lepisi.ac.id
+#+SUBTITLE: Web Desain & Animasi
+#+LANGUAGE: id
+#+OPTIONS: toc:nil num:nil tex:t reveal_history:t
+#+REVEAL_THEME: simple
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1> <p><strong>%s</strong></p> <p>%a<br />&lt;%e&gt;</p>
+#+REVEAL_TRANS: none
+#+REVEAL_PLUGINS: (highlight notes)
+
+* Pembahasan UTS
+  
+  Dalam menjawab UTS diperlukan riset mengenai desain CV yang diinginkan. Yang paling mudah adalah
+  mencarinya di mesin pencari seperti google. Setelah mendapat contoh CV yang diinginkan, langkah
+  berikutnya adalah menyesuaikan isi CV dengan desain yang menjadi contoh.
+  
+  Identifikasi hal-hal berikut:
+  
+  - pembeda secara visual antara judul, sub judul, dan teks isi;
+  - peletakan gambar, penggunaan elemen grafis (garis, bentuk, warna);
+  - ruang kosong yang digunakan;
+  - warna utama dan pendukungnya yang digunakan serta penggunaannya dengan warna latar belakang;
+  - ukuran masing-masing elemen desain (teks, gambar, garis, bentuk, dll.);
+  - jenis huruf yang digunakan.
+
+  Setelah mengidentifikasi hal-hal di atas, mulailah memperkirakan bagian CV yang mana akan diletakkan
+  pada bagian contoh yang mana. Lakukan improvisasi sesuai dengan isi CV yang kamu miliki.
+
+  Setelah mendapat gambaran kasar letak masing-masing isi CV, mulailah membuat struktur file HTML.
+
+** Studi kasus
+   
+   Misal saya membuat CV yang berisi:
+
+   - biodata
+   - pengenalan diri secara ringkas
+   - pengalaman kerja
+   - pendidikan
+   - kemampuan
+     
+   Setelah menentukan infomasi yang ingin saya masukkan dalam CV saya, maka saya perlu menentukan
+   contoh desain yang akan saya pakai sebagai acuan. Berikut ini adalah contoh desain yang saya
+   jadikan acuan.
+   
+   [[./contoh-penyelesaian-uts.jpg]]
+   
+   Berikutnya saya perlu menyesuaikan isi dengan desain yang menjadi acuan seperti menghilangkan
+   bagian yang tidak releven, menambah bagian yang diperlukan.
+   
+   Berikutnya adalah implementasi desain menjadi halaman web. Contoh implementasi yang saya lakukan
+   bisa dilihat di [[file:contoh-jawaban.html][halaman ini]].
+   

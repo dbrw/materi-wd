@@ -1,0 +1,148 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 165%;
+    position: relative;
+    margin: 0 2rem;
+    min-width: 300px;
+}
+
+.page-header {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1.15em;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.page-sub-header {
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+    border-bottom: 8px solid;
+}
+
+.contacts {
+    font-size: .8rem;
+}
+
+.contact-type,
+.contact-value {
+    line-height: 1.35em;
+}
+
+.contact-type {
+    font-weight: 600;
+}
+
+.contact-value {
+    margin-left: 0;
+    margin-bottom: .4rem;
+}
+
+.sub-header {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 4px solid;
+    padding-bottom: .5em;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+#ringkasan + p {
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.experience-title {
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.experience-meta {
+    margin: 0;
+}
+
+.experience-company {
+    font-weight: 200;
+    border-bottom: 1px solid;
+}
+
+.experience-year {
+    font-style: italic;
+}
+
+.experience-description {
+    font-size: .8rem;
+    line-height: 1.5em;
+    margin-top: .5rem;
+}
+
+.responsibilities {
+    list-style-type: square;
+    font-weight: 600;
+    font-size: .8rem;
+    line-height: 1.5em;
+    padding: 0;
+}
+
+.educations,
+.skills,
+.experiences {
+    margin-bottom: 3rem;
+}
+
+.education-major {
+    font-weight: 700;
+}
+
+.skills {
+    list-style-type: square;
+    padding: 0;
+}
+
+.skill-name {
+    text-transform: capitalize;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    line-height: 1em;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0  80px -16px rgba(0,0,0,0.55);
+}
+
+@media screen and (min-width: 640px) {
+    .page-header {
+    }
+}
+
+@media screen and (min-width: 80ch) {
+    body {
+        max-width: 80ch;
+        margin: 0 auto;
+    }
+
+    .contact-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+        min-width: 24ch;
+    }
+
+    .page-header {
+        font-size: 6rem;
+        max-width: 70%;
+    }
+}
