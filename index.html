@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6" media="all">
         <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6/dist/themes/modern.min.css" media="all">
+        <style>
+         img { max-width: 100%; }
+        </style>
     </head>
     <body>
         <main>
@@ -53,26 +56,67 @@
 
             <h4>Daftar pertanyaan:</h4>
 
-            <ul>
+            <h5>
+                Dervinas (2019804315)
+            </h5>
+            <ol>
                 <li>
-                    Udin Saepudin (Contoh Nama Mahasiswa yang bertanya)
-                    <ol>
-                        <li>
-                            Pertanyaan Pertama (dari mahasiswa)
-                            <p>
-                                Jawaban pertanyaan (dari dosen)
-                            </p>
-                        </li>
-
-                        <li>
-                            Pertanyaan Kedua (dari mahasiswa)
-                            <p>
-                                Jawaban pertanyaan (dari dosen)
-                            </p>
-                        </li>
-                    </ol>
+                    Jelaskan perbedaan cara pengoperasikan subscript dan supercript?
+                    <p>
+                        <a href="https://id.wikipedia.org/wiki/Subskrip">subscript</a> dan <a href="https://id.wikipedia.org/wiki/Superskrip">superscript</a>
+                        pada html masing-masing dibuat menggunakan tag <code title="subscript">&lt;sub&gt;</code> dan <code title="superscript">&lt;sup&gt;</code>
+                    </p>
                 </li>
-            </ul>
+
+                <li>
+                    Bagaimana cara mengoperasikan nested list?
+                    <p>
+                        Nested list adalah list di dalam list, biasanya digunakan untuk daftar yang isinya memiliki sub daftar lain,
+                        contohnya bisa kamu <a href="https://github.com/dbrw/materi-wd/blob/b0868b9383c0534872571b9d1bae1d43ca214102/index.html#L56">lihat di sini</a>.
+                    </p>
+                </li>
+            </ol>
+
+            <h5>
+                Firman Waruwu (2019804318)
+            </h5>
+            <ol>
+                <li>
+                    Bagaimana coding untuk memposisikan FOTO pada CV kita
+                    seperti pada gambar  berikut pak tanpa mempengaruhi texs yang ada di
+                    sebelahnya. dan codingnya di letakan di mana, apakah di css atau html.
+                    trimakasih. <br/>
+                    <img alt="cv" src="img/pertanyaan-firman.jpg"/>
+                    <p>
+                        Perlu diingat bahwa file html berisi informasi dan struktur dari sebuah halaman web, bukan menentukan tampilannya.
+                        Semua koding yang mempengaruhi tampilan, sebaiknya diletakkan di file css.
+                        Cara paling mudah untuk mendapatkan <em>layout</em> seperti gambar adalah dengan menggunakan property
+                        <code>float</code> yang tutorialnya bisa dibaca di <a href="https://css-tricks.com/all-about-floats/">css-tricks</a>.
+                    </p>
+                </li>
+            </ol>
+
+            <h5>Tandy Awang (2019804332)</h5>
+
+            <ol>
+                <li>
+                    Apakah dapat membuat 2 halaman dalam satu 1 halaman html?
+                    <p>
+                        Jika yang dimaksud adalah menampilkan lebih dari satu halaman pada sebuah halaman html, ada
+                        sebuah elemen bernama <code>&lt;iframe&gt;</code> yang bisa mengambil isi dari sebuah halaman web.
+                        Jadi bisa saja kamu membuat sebuah halaman web berisi beberapa iframe yang masing-masing menampilkan
+                        halaman web yang berbeda. Bacaan lanjut di laman
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">developer mozilla</a>.
+                    </p>
+                </li>
+                <li>
+                    Berapa maksimal jumlah heading yang dapat dimasukan?
+                    <p>
+                        jumlah heading yang dapat dibuat di html tidak diatur batasnya, namun heading di html
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">memiliki enam tingkat</a>.
+                    </p>
+                </li>
+            </ol>
 
             <h2>
                 Studi Kasus
