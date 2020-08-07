@@ -1,0 +1,360 @@
+/* kita bisa mendefinisikan variabel pada CSS untuk digunakan pada deklarasi style. nama variabel harus diawali dua buah tanda hubung. */
+:root {
+    --warna-hitam: #223127;
+    --warna-terang: #f0f7f4;
+    --warna-biru: #114b5f;
+    --warna-sian: #339989;
+    --warna-merah: #ff715b;
+    --warna-putih: #fff;
+    --warna-abu: #7e8b82;
+    --uk-buuuesar: 4rem;
+    --uk-buuesar: 2rem;
+    --uk-besar: 1rem;
+    --uk-sedang: 0.5rem;
+    --uk-kecil: 0.25rem;
+    --font-sans: 'Fira Sans', sans-serif;
+    --break-tab-up: 80ch;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* efek scrolling saat link klik link */
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.45em;
+    color: var(--warna-hitam); /* menggunakan nilai variabel yang telah didefinisikan di atas */
+    background-color: var(--warna-terang);
+    margin: 0;
+    padding: var(--uk-besar);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+}
+
+main a:link {
+    color: var(--warna-merah);
+    display: inline-block;
+    padding: 0 var(--uk-sedang);
+    border-radius: var(--uk-sedang);
+}
+
+main a:hover {
+    background-image: linear-gradient(197deg, var(--warna-sian), var(--warna-biru));
+    color: var(--warna-putih);
+}
+
+.navigasi-wrapper {
+    overflow-x: scroll;
+    background-color: var(--warna-putih);
+    margin: 0 var(--uk-sedang);
+    border-radius: var(--uk-besar);
+    box-shadow: 0 12px 34px -26px rgba(0,0,0,0.15),
+                0 7px 16px rgba(0,0,0,0.15);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    position: sticky;
+    top: 1rem;
+    z-index: 3;
+}
+
+.navigasi-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.navigasi {
+    list-style-type: none;
+    padding: var(--uk-sedang) 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navigasi-item {
+    padding: 0.5em 1em;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: var(--uk-besar);
+    vertical-align: middle;
+}
+
+.navigasi-item:not(last-child) {
+    margin-left: var(--uk-sedang);
+}
+
+.navigasi-item:last-child {
+    margin-right: var(--uk-sedang);
+}
+
+.navigasi-item:hover {
+    background-color: var(--warna-terang);
+}
+
+.navigasi-item.active {
+    background-color: var(--warna-sian);
+}
+
+.navigasi-link {
+    color: var(--warna-biru);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.navigasi-item.active .navigasi-link {
+    color: var(--warna-terang);
+}
+
+.page-header {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1em;
+    color: var(--warna-sian);
+}
+
+.page-header::before {
+    content: '';
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 3rem;
+    display: inline-block;
+    margin-right: 0.25em;
+    vertical-align: -10%;
+    background-color: var(--warna-merah);
+    border-radius: 50%;
+}
+
+.page-sub-header {
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.35em;
+    color: var(--warna-abu);
+}
+
+.sub-header {
+    margin: 3rem 0 1rem;
+    font-weight: 200;
+    font-size: 3.4rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+}
+
+h1, h2 {
+    padding-top: 3rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 600;
+    color: var(--warna-abu);
+}
+
+article {
+    margin-bottom: var(--uk-buuuesar);
+    padding: 1rem 2rem 2rem;
+}
+
+article:not(:first-child) {
+    border-top: 1px solid var(--warna-terang);
+}
+
+main {
+    margin: 2rem auto;
+    background-color: var(--warna-putih);
+    border-radius: var(--uk-sedang);
+    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.33);
+    max-width: 80ch;
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.formulir-kontak {
+    max-width: 80ch;
+    padding: 0 var(--uk-besar);
+    color: var(--warna-abu);
+}
+
+.formulir-input {
+    display: block;
+    border-radius: var(--uk-sedang);
+    padding: var(--uk-sedang);
+    border: 0;
+    width: 100%;
+    margin-bottom: var(--uk-sedang);
+    background-color: var(--warna-terang);
+    color: var(--warna-hitam);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    box-shadow: 0 4px 44px -12px rgba(0,0,0,0.13) inset; /* efek shadow di dalam kotak pada form di bagian bawah */
+    resize: none;
+}
+
+.formulir-tombol {
+    padding: var(--uk-sedang) var(--uk-besar);
+    border: 0;
+    border-radius: var(--uk-sedang);
+    color: var(--warna-terang);
+    background-color: var(--warna-sian);
+    border-bottom: 1px solid var(--warna-biru);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.55);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.formulir-tombol:hover,
+.formulir-tombol:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15),
+    0 8px 18px -2px rgba(0,0,0,0.25);
+}
+
+.formulir-tombol:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.45);
+}
+
+.rata-kanan {
+    text-align: right;
+}
+
+footer {
+    margin: 4rem 0 2rem;
+    color: var(--warna-hitam);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+}
+
+main::before {
+    content: '';
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    height: 3rem;
+    background-image: linear-gradient(to bottom, rgba(240, 247, 244, 1) 30%, rgba(240, 247, 244, 0) 100%);
+}
+
+main ol,
+main ul {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 1rem;
+}
+
+main ol li,
+main ul li {
+    counter-increment: item;
+    margin-bottom: var(--uk-sedang);
+    position: relative;
+}
+
+main ol > li::before {
+    content: counter(item);
+    border-radius: 50% 50%;
+    padding: var(--uk-kecil);
+    background-color: var(--warna-terang);
+    color: var(--warna-sian);
+    text-align: center;
+    display: block;
+    font-size: 0.8rem;
+    width: 1.35em;
+    line-height: 1.35em;
+    left: -2.2em;
+    position: absolute;
+}
+
+
+main ul > li::before {
+    content: "\2217";
+    color: var(--warna-sian);
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    left: -1.2em;
+    position: absolute;
+}
+
+main ul li:hover::before {
+    animation: 2s puter linear infinite;
+}
+
+/* deklarasi ini disebut dengan media query, fungsinya untuk mendeklarasikan
+style tampilan elemen html berdasarkan ukuran layar (responsive design) */
+@media screen and (min-width: 80ch) {
+    header {
+        max-width: var(--break-tab-up);
+    }
+
+    .navigasi-wrapper {
+        max-width: calc(var(--break-tab-up) - var(--uk-besar));
+    }
+
+    header,
+    .formulir-kontak,
+    .navigasi-wrapper {
+        margin: 0 auto;
+    }
+
+    main {
+        background-color: transparent;
+        box-shadow: none;
+        overflow-x: visible;
+    }
+
+    article {
+        background-color: var(--warna-putih);
+        border-radius: var(--uk-sedang);
+        box-shadow: 0 12px 24px -8px rgba(0,0,0,0.33);
+    }
+
+    .sub-header {
+        margin-top: 1rem;
+        padding: 0;
+    }
+}
+
+/* keempat deklarasi di bawah untuk efek ripple pada tombol navigasi ketika diklik */
+
+.navigasi-link.animate::before {
+    content: '';
+    display: block;
+    background-color: var(--warna-sian);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    top: var(--koord-y);
+    left: var(--koord-x);
+    position: absolute;
+    opacity: 0;
+    animation: gelombang ease-out 400ms;
+}
+
+.navigasi-item {
+    overflow: hidden;
+}
+
+@keyframes gelombang {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(12); opacity: 0.6; }
+}
+
+@keyframes puter {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
